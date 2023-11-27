@@ -22,10 +22,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe">
     <include_path>
@@ -50,6 +52,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "tom",
+
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,6 +73,7 @@
       <workItem from="1700831996868" duration="3444000" />
       <workItem from="1701002227515" duration="12524000" />
       <workItem from="1701089712387" duration="1455000" />
+
     </task>
     <servers />
   </component>
