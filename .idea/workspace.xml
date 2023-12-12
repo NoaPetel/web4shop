@@ -105,11 +105,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "tom",
-<<<<<<< HEAD
-
-=======
     "last_opened_file_path": "C:/xampp/htdocs/projet_php",
->>>>>>> tom
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -137,17 +133,7 @@
       <workItem from="1700659721160" duration="4127000" />
       <workItem from="1700831996868" duration="3444000" />
       <workItem from="1701002227515" duration="12524000" />
-<<<<<<< HEAD
       <workItem from="1701089712387" duration="1455000" />
-
-=======
-      <workItem from="1701089712387" duration="3466000" />
-      <workItem from="1701372102292" duration="673000" />
-      <workItem from="1701685287706" duration="70000" />
-      <workItem from="1701872827138" duration="413000" />
-      <workItem from="1702109238678" duration="465000" />
-      <workItem from="1702382626835" duration="609000" />
->>>>>>> tom
     </task>
     <servers />
   </component>
