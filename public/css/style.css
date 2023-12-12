@@ -1,49 +1,69 @@
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh; /* 100% de la hauteur de la fenêtre visible */
+        display: flex;
+        flex-direction: column;
+    }
 
-footer {
-    margin: 5px;
-    padding: 20px;
-    background-color: darkcyan;
-    font-size: 15px;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
+    .content {
+        flex: 1; /* Fait en sorte que le contenu prenne autant d'espace que possible */
+        padding: 20px;
+    }
+
+    .site-footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        margin-top: auto; /* Pousse le footer vers le bas */
+        text-align: center;
+        line-height: 2;
+
+    }
+    .site-footer p {
+        text-align: center;
+    }
+
+    .site-footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .site-footer a:hover {
+        color: #ffcc00;
+    /
+    }
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ou utilisez 'space-around' selon votre préférence */
 }
 
+.clcard-img-top {
+    max-width: 100%;
+}
 
-.button-connexion {
-    background-color: #FFFFFF;
-    border: 1px solid rgb(209, 213, 219);
-    border-radius: .5rem;
-    color: #111827;
-    font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: .875rem;
-    font-weight: 600;
-    line-height: 1.25rem;
-    padding: .75rem 1rem;
-    text-align: center;
-    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+.clickable-card {
+    max-width: 300px; /* Ajoutez la largeur maximale que vous souhaitez pour vos cartes */
+    margin: 0 auto; /* Pour centrer les cartes horizontalement */
     cursor: pointer;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-user-select: none;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+
 }
 
-.button-connexion:hover {
-    background-color: #f9fafb;
+.clickable-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
 }
 
-.button-connexion:focus {
-    outline: 2px solid rgba(0, 0, 0, 0.1);
-    outline-offset: 2px;
+.container {
+    margin-top: 40px;
+    text-align: center;
 }
 
-.button-connexion:focus-visible {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
+
+

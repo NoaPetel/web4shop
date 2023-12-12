@@ -1,6 +1,6 @@
 <?php
 
-class WelcomeController
+class BoissonsController
 {
 
     function __construct()
@@ -11,7 +11,8 @@ class WelcomeController
     {
 
         $products = getProducts();
-        echo $twig->render('accueil.twig', ['products' => $products]);
+        echo $twig->render('Boissons.twig', ['products' => $products]);
+
     }
 
 }
