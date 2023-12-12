@@ -1,6 +1,6 @@
 <?php
 
-function getData()
+function getProducts()
 {
     try {
         $db = new PDO(
@@ -11,10 +11,9 @@ function getData()
         echo 'PDO problem';
     }
 
-    $products = $db->query('SELECT * FROM PRODUCTS');
-    #$productsStatement->execute();
-    #$products = $productsStatement->fetchAll();
+    $query = $db->prepare('SELECT * FROM PRODUCTS');
+    $query->execute();
+    $products = $query->fetchAll();
 
-    #print_r($products);
     return $products;
 }
