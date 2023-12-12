@@ -11,7 +11,7 @@ class WelcomeController
     {
 
         $products = getProducts();
-        echo $twig->render('default.twig', ['products' => $products]);
+        echo $twig->render('accueil.twig', ['products' => $products]);
     }
 
 }
