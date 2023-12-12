@@ -2,6 +2,7 @@
 
 require_once 'WelcomeController.php';
 require_once 'ProductsController.php';
+
 class Router
 {
     private $twig;
@@ -19,20 +20,13 @@ class Router
     {
         try {
             if (isset($_GET['page'])) {
-                
-                switch ($_GET['page']) {
-                    case 'default':
-                        $this->ctrlWelcome->render($this->twig);
-                    case 'products':
-                        $this->ctrlProducts->render($this->twig);
-                }
+                $this->ctrlProducts->render($this->twig, $_GET['page']);
             } else {
                 $this->ctrlWelcome->render($this->twig);
             }
 
-            
         } catch (Exception $e) {
-            throw new Exception("Action invalide");
+            throw new Exception($e->getMessage());
         }
     }
 

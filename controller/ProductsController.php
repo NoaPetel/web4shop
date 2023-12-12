@@ -7,12 +7,24 @@ class ProductsController
     {
 
     }
-    public function render($twig)
+    public function render($twig, $type)
     {
-
-        $products = getProducts();
-        echo $twig->render('connexion.twig', ['products' => $products]);
-
+        switch($type){
+            case 'biscuits':
+                $products = getBiscuits();
+                echo $twig->render('Products.twig', ['products' => $products]);
+                break;
+            case 'boissons':
+                $products = getBoissons();
+                echo $twig->render('Products.twig', ['products' => $products]);
+                break;
+            case 'fruits':
+                $products = getFruits();
+                echo $twig->render('Products.twig', ['products' => $products]);
+                break;
+            default:
+                echo $twig->render('error.twig');
+        }
     }
 
 }

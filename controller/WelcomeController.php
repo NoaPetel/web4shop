@@ -10,8 +10,7 @@ class WelcomeController
     public function render($twig)
     {
 
-        $products = getProducts();
-        echo $twig->render('accueil.twig', ['products' => $products]);
+        echo $twig->render('accueil.twig');
     }
 
 }
